@@ -1,0 +1,491 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #5b45db; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+
+.desktop-container {
+    width: 100%;
+    max-width: 750px;
+    background-color: #ffffff; 
+    border-radius: 24px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 40px 20px 40px;
+    border-bottom: 2px solid #f0f0f0;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.logo-container {
+    width: 55px;
+    height: 55px;
+    background-color: #ff9f1a; 
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3px;
+}
+
+.logo-icon {
+    width: 100%;
+    height: 100%;
+    background-color: #5b45db; 
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ff9f1a;
+    font-size: 24px;
+}
+
+.brand-name {
+    margin-left: 15px;
+    font-size: 22px;
+    font-weight: 700;
+    color: #ff9f1a; 
+}
+
+
+.share-btn {
+    background: none;
+    border: none;
+    font-size: 22px;
+    color: #222;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.share-btn:hover {
+    color: #5b45db;
+}
+
+
+.main-content {
+    padding: 25px 40px;
+}
+
+
+.title-section {
+    margin-bottom: 25px;
+}
+
+.title-section h1 {
+    font-size: 32px;
+    font-weight: 800;
+    color: #222;
+    margin-bottom: 8px;
+}
+
+.title-section p {
+    font-size: 16px;
+    color: #555;
+}
+
+
+.options-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 30px;
+}
+
+
+.option-card {
+    background-color: #f7f6fc;
+    border: 2px solid #e2defc;
+    border-radius: 16px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.option-card:hover {
+    border-color: #5b45db;
+    background-color: #f4f2ff;
+}
+
+.option-card input[type="radio"] {
+    display: none;
+}
+
+
+.card-icon {
+    width: 65px;
+    height: 65px;
+    background-color: #5b45db; 
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ff9f1a; 
+    font-size: 26px;
+    flex-shrink: 0;
+    margin-right: 20px;
+}
+
+
+.card-info {
+    flex: 1;
+}
+
+.card-info h2 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 4px;
+}
+
+.card-info p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 12px;
+}
+
+.card-details {
+    display: flex;
+    gap: 25px;
+    font-size: 14px;
+    color: #222;
+    font-weight: 600;
+}
+
+.card-details span {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.card-details .fa-clock,
+.card-details .fa-coins {
+    color: #ff9f1a; 
+}
+
+
+.custom-checkbox {
+    width: 26px;
+    height: 26px;
+    border: 2px solid #5b45db;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    transition: all 0.2s;
+}
+
+.custom-checkbox i {
+    font-size: 14px;
+    color: #ffffff;
+    display: none;
+}
+
+
+.option-card input[type="radio"]:checked ~ .custom-checkbox {
+    background-color: #5b45db; 
+    border-color: #5b45db;
+}
+
+.option-card input[type="radio"]:checked ~ .custom-checkbox i {
+    display: block;
+}
+
+
+.action-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.btn-primary {
+    display: inline-block;
+    background-color: #ff9f1a; 
+    color: #ffffff;
+    border: none;
+    padding: 16px 30px;
+    border-radius: 14px;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: 0 4px 15px rgba(255, 159, 26, 0.4);
+    transition: background 0.2s, transform 0.1s;
+}
+
+.btn-primary:hover {
+    background-color: #e88d0e;
+    transform: translateY(-2px);
+}
+
+.btn-primary:active {
+    transform: translateY(0);
+}
+
+
+
+
+.student-photo-container {
+    display: flex;
+    justify-content: center;
+    margin: 5px 0 20px 0;
+}
+
+.student-photo {
+    width: 110px;
+    height: 110px;
+    background: linear-gradient(135deg, #d1ccfc, #b0a4fc);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #5b45db;
+    font-size: 45px;
+    box-shadow: 0 6px 15px rgba(91, 69, 219, 0.2);
+    border: 3px solid #ffffff;
+}
+
+
+.info-list {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    margin-bottom: 20px;
+}
+
+.info-card {
+    border-radius: 16px;
+    padding: 16px 22px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.03);
+}
+
+.info-card.purple-card {
+    background-color: #dcdcfa; 
+}
+
+.info-card.orange-card {
+    background-color: #ffd88a; 
+}
+
+.info-label {
+    font-size: 14px;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 2px;
+}
+
+.info-value {
+    font-size: 16px;
+    color: #333;
+    font-weight: 500;
+}
+
+
+.info-card.with-icon {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-icon-right {
+    font-size: 26px;
+    color: #222;
+}
+
+
+.student-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+}
+
+.valor-text {
+    font-size: 20px;
+    font-weight: 600;
+    color: #000;
+}
+
+.valor-text strong {
+    font-weight: 800;
+}
+
+.check-badge {
+    font-size: 42px;
+    color: #5b45db;
+    display: flex;
+    align-items: center;
+}
+
+
+.bottom-nav {
+    height: 75px;
+    background-color: #5b45db; 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 40px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    margin-top: 20px;
+}
+
+.nav-item {
+    color: #ff9f1a;
+    background-color: transparent;
+    width: 50px;
+    height: 45px;
+    border-radius: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    text-decoration: none;
+    transition: background 0.2s, color 0.2s;
+    cursor: pointer;
+}
+
+.nav-item.active {
+    background-color: #ff9f1a; 
+    color: #5b45db;
+}
+
+.nav-item:hover:not(.active) {
+    background-color: rgba(255, 159, 26, 0.2);
+}
+
+
+div.nav-item {
+    cursor: default;
+}
+
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+
+.modal-overlay.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-card {
+    background-color: #ffffff;
+    width: 90%;
+    max-width: 420px;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    transform: translateY(20px);
+    transition: transform 0.3s ease;
+}
+
+.modal-overlay.show .modal-card {
+    transform: translateY(0);
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.modal-header h3 {
+    font-size: 20px;
+    color: #222;
+    font-weight: 700;
+}
+
+.close-modal {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: #555;
+    transition: color 0.2s;
+}
+
+.close-modal:hover {
+    color: #5b45db;
+}
+
+.modal-card p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.modal-input-group {
+    display: flex;
+    align-items: center;
+    background-color: #f7f6fc;
+    border: 2px solid #e2defc;
+    border-radius: 12px;
+    padding: 12px 15px;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.modal-input-group i {
+    color: #5b45db;
+    font-size: 18px;
+}
+
+.modal-input-group input {
+    border: none;
+    background: transparent;
+    outline: none;
+    font-size: 15px;
+    width: 100%;
+    color: #222;
+}
+
+.modal-send-btn {
+    width: 100%;
+    padding: 14px;
+    border-radius: 12px;
+    font-size: 16px;
+}

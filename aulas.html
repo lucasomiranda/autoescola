@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proz Autoescola - Escolha sua aula</title>
+    <script src="comprovante.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  
+    <div class="desktop-container">
+        
+       
+        <header class="header">
+            <div class="header-left">
+                <div class="logo-container">
+                    <div class="logo-icon">
+                        <i class="fa-solid fa-car-side"></i>
+                    </div>
+                </div>
+                <span class="brand-name">Proz Autoescola</span>
+            </div>
+        </header>
+
+      
+        <main class="main-content">
+            
+           
+            <section class="title-section">
+                <h1>Escolha sua aula</h1>
+                <p>Selecione o tipo de aula que deseja agendar.</p>
+            </section>
+
+           
+            <div class="options-list">
+
+            
+                <label class="option-card">
+                    <input type="radio" name="aula" id="pratica" value="Prática" checked>
+                    <div class="card-icon">
+                        <i class="fa-solid fa-car"></i>
+                    </div>
+                    <div class="card-info">
+                        <h2>Aula prática</h2>
+                        <p>Treinamento no veículo com instrutor credenciado.</p>
+                        <div class="card-details">
+                            <span><i class="fa-regular fa-clock"></i> 50 minutos</span>
+                            <span><i class="fa-solid fa-coins"></i> R$ 120,00</span>
+                        </div>
+                    </div>
+                    <div class="custom-checkbox">
+                        <i class="fa-solid fa-check"></i>
+                    </div>
+                </label>
+
+               
+                <label class="option-card">
+                    <input type="radio" name="aula" id="teorica" value="Teórica">
+                    <div class="card-icon">
+                        <i class="fa-solid fa-book-open"></i>
+                    </div>
+                    <div class="card-info">
+                        <h2>Aula teórica</h2>
+                        <p>Conteúdo completo para a prova do Detran.</p>
+                        <div class="card-details">
+                            <span><i class="fa-regular fa-clock"></i> 1 hora</span>
+                            <span><i class="fa-solid fa-coins"></i> R$ 80,00</span>
+                        </div>
+                    </div>
+                    <div class="custom-checkbox">
+                        <i class="fa-solid fa-check"></i>
+                    </div>
+                </label>
+
+               
+                <label class="option-card">
+                    <input type="radio" name="aula" id="simulado" value="Simulado">
+                    <div class="card-icon">
+                        <i class="fa-solid fa-clipboard-check"></i>
+                    </div>
+                    <div class="card-info">
+                        <h2>Simulado</h2>
+                        <p>Treino para o exame teórico.</p>
+                        <div class="card-details">
+                            <span><i class="fa-regular fa-clock"></i> 1 hora</span>
+                            <span><i class="fa-solid fa-coins"></i> R$ 50,00</span>
+                        </div>
+                    </div>
+                    <div class="custom-checkbox">
+                        <i class="fa-solid fa-check"></i>
+                    </div>
+                </label>
+
+            </div>
+
+         
+            <div class="action-container">
+                <a class="btn-primary" id="avanca" href="comprovante.html">Avançar &gt;</a>
+            </div>
+
+        </main>
+
+        
+        <nav class="bottom-nav">
+            <a href="index.html" class="nav-item"><i class="fa-solid fa-house"></i></a>
+            <!-- O computador agora indica que estamos na página de aulas -->
+            <a href="aulas.html" class="nav-item active"><i class="fa-solid fa-laptop"></i></a>
+            <a href="#" class="nav-item"><i class="fa-regular fa-clock"></i></a>
+            <!-- O bonequinho leva para o perfil -->
+            <a href="perfil.html" class="nav-item"><i class="fa-regular fa-user"></i></a>
+        </nav>
+
+    </div>
+
+</body>
+</html>
